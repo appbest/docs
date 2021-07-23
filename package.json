@@ -1,0 +1,30 @@
+{
+  "name": "quick-docs",
+  "version": "0.2.0",
+  "private": true,
+  "author": {
+    "name": "Aibo",
+    "email": "appcnsz@outlook.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "quick",
+    "vue",
+    "vue3.x",
+    "ui"
+  ],
+  "scripts": {
+    "docs:dev": "vitepress dev docs --port 3083",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs --port 3083",
+    "deploy": "bash deploy.sh"
+  },
+  "devDependencies": {
+    "less": "^4.1.1",
+    "vitepress": "^0.14.1"
+  },
+  "dependencies": {
+    "quick-plugin-md": "^0.1.2",
+    "qve": "^0.2.3"
+  }
+}
