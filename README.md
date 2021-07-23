@@ -13,7 +13,7 @@
 - 克隆项目
 
 ```bash
-git clone git@gitee.com:qve/docs.git
+git clone git@github.com:appbest/docs.git
 ```
 
 - 安装
@@ -22,11 +22,11 @@ git clone git@gitee.com:qve/docs.git
 # yarn 安装
 yarn
 
-# 调试vue
-yarn dev
+# 调试
+yarn docs:dev
 
-# 打包项目
-yarn build
+# 打包
+yarn docs:build
 ```
 
 ## vite 解决引用组件热更问题
@@ -154,14 +154,43 @@ return 'test';
 
 ## git 入门
 
-```bash
+```sh
+
 # 初始化
 git init
-#  获取项目
-git remote add git@https://gitee.com/qve/docs.git
-#由于在创建远程仓库时会初始化一个README.md文件，而本地仓库里没有，所以需要先执行pull操作将远程仓库拉取合并到本地仓库，否则会出错。执行代码：
-git pull origin master
-git add .
-git commit -m "提交说明"
-git push origin master
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:appbest/docs.git
+git push -u origin main
+
+```
+
+## github pages 部署
+
+```sh
+#!/usr/bin/env sh
+
+# 忽略错误
+set -e
+
+# 构建
+# npm run docs:build
+
+# 进入待发布的目录
+cd docs/.vitepress/dist
+
+# 如果是发布到自定义域名
+# echo 'www.example.com' > CNAME
+
+git init
+git add -A
+git commit -m 'deploy'
+
+# 如果部署到 https://<USERNAME>.github.io
+# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
+
+# 如果是部署到 pages https://<USERNAME>.github.io/<REPO>
+git push -f git@github.com:appbest/docs.git master:gh-pages
+
 ```
