@@ -144,4 +144,7 @@ git commit -m 'deploy'
 # 如果是部署到 pages https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:appbest/docs.git master:gh-pages
 
+# 同步部署到 qve.gitee.io/docs/
+git push -f git@gitee.com:qve/docs.git master:gh-pages
+
 ```
