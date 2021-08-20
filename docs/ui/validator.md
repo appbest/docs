@@ -20,7 +20,7 @@ hex -- 十六进制数
 - qve > attr.js
   - bindAttrRlus
 
-<CodeRun auto editable>
+<CodeRun editable>
 
 ```js
 // <Input v-model="the.formData.phone"

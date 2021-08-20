@@ -7,7 +7,7 @@ const root = {
   // 搜索的文件名地址，默认是根目录下,与Layout.vue 搜索数据源同步
   keyword: '\\keywords.json',
   /** 当前项目根目录地址 */
-  path: '',
+  path: ''
 };
 
 /**
@@ -17,27 +17,27 @@ const nav = [
   { text: '主页', link: '/' },
   {
     text: 'plugin',
-    link: '/plugin/',
+    link: '/plugin/'
   },
   {
     text: 'lib',
-    link: '/lib/',
+    link: '/lib/'
   },
   {
     text: 'qvui',
-    link: '/qv/',
+    link: '/qv/'
   },
   {
     text: 'qveui',
-    link: '/ui/',
+    link: '/ui/'
   },
   {
     text: 'qve',
-    link: '/qve/',
+    link: '/qve/'
   },
   {
     text: '指南',
-    link: '/guide/',
+    link: '/guide/'
   },
   {
     text: '更多',
@@ -45,13 +45,13 @@ const nav = [
     items: [
       {
         text: 'IconFont 图标',
-        link: '/fonts/demo_index.html?v=0.2',
+        link: '/fonts/demo_index.html?v=0.2'
       },
       { text: '码云', link: 'https://gitee.com/qve/docs' },
       { text: 'Github', link: 'https://github.com/appbest/' },
-      { text: 'NPM lib', link: 'https://www.npmjs.com/package/quick.lib' },
-    ],
-  },
+      { text: 'NPM lib', link: 'https://www.npmjs.com/package/quick.lib' }
+    ]
+  }
 ];
 
 /**
@@ -61,309 +61,309 @@ let sidebar = {
   '/plugin/': [
     {
       text: '快速使用',
-      link: 'index',
+      link: 'index'
     },
 
     {
       text: 'markdown 语法',
-      link: 'markdown',
+      link: 'markdown'
     },
     {
       text: '搜索插件',
-      link: 'search',
+      link: 'search'
     },
     {
       text: '图表插件',
-      link: 'graphs',
+      link: 'graphs'
     },
     {
       text: '时序图插件',
-      link: 'sequence',
+      link: 'sequence'
     },
     {
       text: '代码组件插件',
-      link: 'run',
-    },
+      link: 'run'
+    }
   ],
   // 如果你不需要文档版本功能，只需去掉2.0，1.0文件夹，将md文件直接放在components文件夹下
   '/lib/': [
     {
       text: '安装使用',
-      link: 'index',
+      link: 'index'
     },
     {
       text: '原生扩展',
-      link: 'init',
+      link: 'init'
     },
     {
       text: 'BLL',
-      link: 'bll',
+      link: 'bll'
     },
     {
       text: 'Json',
-      link: 'json',
+      link: 'json'
     },
     {
       text: 'Lib',
-      link: 'lib',
+      link: 'lib'
     },
     {
       text: 'Html',
-      link: 'html',
+      link: 'html'
     },
     {
       text: 'Xml',
-      link: 'xml',
+      link: 'xml'
     },
     {
       text: 'Cache',
-      link: 'cache',
+      link: 'cache'
     },
     {
       text: 'Cookie',
-      link: 'cookie',
+      link: 'cookie'
     },
     {
       text: 'Storage',
-      link: 'storage',
+      link: 'storage'
     },
     {
       text: 'Subscribe',
-      link: 'subscribe',
+      link: 'subscribe'
     },
     {
       text: 'View',
-      link: 'view',
-    },
+      link: 'view'
+    }
   ],
   '/ui/': [
     {
       text: '安装使用',
-      link: 'index',
+      link: 'index'
     },
     {
       text: '全局配置',
-      link: 'config',
+      link: 'config'
     },
     {
       text: '全局接口',
-      link: 'global',
+      link: 'global'
     },
     {
       text: 'Icon 图标',
-      link: 'icon',
+      link: 'icon'
     },
 
     {
       text: 'Grid 栅格',
-      link: 'grid',
+      link: 'grid'
     },
     {
       text: 'Badge 徽标数',
-      link: 'badge',
+      link: 'badge'
     },
     {
       text: 'Button 按钮',
-      link: 'button',
+      link: 'button'
     },
     {
       text: 'Tooltip 小提示',
-      link: 'tooltip',
+      link: 'tooltip'
     },
     {
       text: 'Tag 标签',
-      link: 'tag',
+      link: 'tag'
     },
 
     {
       text: 'Card 卡片',
-      link: 'card',
+      link: 'card'
     },
     {
       text: 'Tabs 标签页',
-      link: 'tabs',
+      link: 'tabs'
     },
     {
       text: 'Paged 分页',
-      link: 'paged',
+      link: 'paged'
     },
     {
       text: 'Loading 加载',
-      link: 'loading',
+      link: 'loading'
     },
     {
       text: 'Input 输入框',
-      link: 'input',
+      link: 'input'
     },
     {
       text: 'Textarea 输入框',
-      link: 'textarea',
+      link: 'textarea'
     },
     {
       text: 'TextJson ',
-      link: 'textJson',
+      link: 'textJson'
     },
     {
       text: 'TextUbb',
-      link: 'textUbb',
+      link: 'textUbb'
     },
     {
       text: 'Switch 开关',
-      link: 'switch',
+      link: 'switch'
     },
     {
       text: 'Radio 单选框',
-      link: 'radio',
+      link: 'radio'
     },
     {
       text: 'Checkbox 多选框',
-      link: 'checkbox',
+      link: 'checkbox'
     },
     {
       text: 'Select 选择器',
-      link: 'select',
+      link: 'select'
     },
     {
       text: 'DatePicker 时间日期',
-      link: 'datePicker',
+      link: 'datePicker'
     },
     {
       text: 'ImgGlass 图片背景',
-      link: 'imgGlass',
+      link: 'imgGlass'
     },
     {
       text: 'ImgLazy 图片懒加载',
-      link: 'imgLazy',
+      link: 'imgLazy'
     },
     {
       text: 'Table 表格',
-      link: 'table',
+      link: 'table'
     },
     {
       text: 'Form 表单',
-      link: 'form',
+      link: 'form'
     },
     {
       text: 'Tree 树组件',
-      link: 'tree',
+      link: 'tree'
     },
     {
       text: 'TreeJson 树',
-      link: 'treeJson',
+      link: 'treeJson'
     },
     {
       text: 'Menu 导航菜单',
-      link: 'menu',
+      link: 'menu'
     },
     {
       text: 'Message 消息',
-      link: 'message',
+      link: 'message'
     },
     {
       text: 'Notice 通知提醒',
-      link: 'notice',
+      link: 'notice'
     },
     {
       text: 'Frame 弹窗拖拽',
-      link: 'frame',
+      link: 'frame'
     },
     {
       text: 'Drag 拖拽窗口',
-      link: 'drag',
+      link: 'drag'
     },
     {
       text: 'Modal 对话框',
-      link: 'modal',
+      link: 'modal'
     },
     {
       text: 'Poptip 气泡提示',
-      link: 'poptip',
+      link: 'poptip'
     },
     {
       text: 'Handle 拖把手',
-      link: 'handle',
+      link: 'handle'
     },
     {
       text: 'Mask 遮罩',
-      link: 'mask',
+      link: 'mask'
     },
     {
       text: 'validator 规则验证',
-      link: 'validator',
-    },
+      link: 'validator'
+    }
   ],
   '/qve/': [
     {
       text: '快速上手',
-      link: 'index',
+      link: 'index'
     },
     {
       text: '组件模板',
-      link: 'tpl',
+      link: 'tpl'
     },
     {
       text: 'Http 请求',
-      link: 'http',
+      link: 'http'
     },
     {
       text: '全局状态',
-      link: 'store',
+      link: 'store'
     },
     {
       text: '数据列表',
-      link: 'listor',
+      link: 'listor'
     },
     {
       text: '动态表单',
-      link: 'editor',
+      link: 'editor'
     },
     {
       text: '查询面板',
-      link: 'PanelListor',
+      link: 'PanelListor'
     },
     {
       text: '动态控件',
-      link: 'control',
+      link: 'control'
     },
     {
       text: '代码编辑器',
-      link: 'CodeEditor',
+      link: 'CodeEditor'
     },
     {
       text: '异步动态组件',
-      link: 'asyncModel',
+      link: 'asyncModel'
     },
     {
       text: '及时通信',
-      link: 'io',
+      link: 'io'
     },
     {
       text: '路由配置',
-      link: 'router',
-    },
+      link: 'router'
+    }
   ],
   '/qv/': [
     {
       text: '介绍',
-      link: 'index',
+      link: 'index'
     },
     {
       text: 'uni',
-      link: 'uni',
-    },
+      link: 'uni'
+    }
   ],
   '/guide/': [
     {
       text: '介绍',
-      link: 'index',
+      link: 'index'
     },
     {
       text: 'vscode',
-      link: 'vscode',
+      link: 'vscode'
     },
     {
       text: 'rollup',
-      link: 'rollup',
+      link: 'rollup'
     },
 
     {
@@ -372,41 +372,41 @@ let sidebar = {
       children: [
         {
           text: '介绍',
-          link: 'index',
+          link: 'index'
         },
         {
           text: 'vue 兼容性',
-          link: 'base',
+          link: 'base'
         },
         {
           text: 'vue 错误机制',
-          link: 'error_handler',
+          link: 'error_handler'
         },
         {
           text: 'vue3.x 新手上路',
-          link: 'start',
+          link: 'start'
         },
         {
           text: 'JSX',
-          link: 'jsx',
+          link: 'jsx'
         },
         {
           text: '组件',
-          link: 'component',
+          link: 'component'
         },
         {
           text: 'vue 2.x兼容',
-          link: 'compositio-api',
+          link: 'compositio-api'
         },
         {
           text: 'lang 国际化',
-          link: 'lang',
+          link: 'lang'
         },
         {
           text: 'vite',
-          link: 'vite',
-        },
-      ],
+          link: 'vite'
+        }
+      ]
     },
     {
       text: 'h5',
@@ -414,29 +414,29 @@ let sidebar = {
       children: [
         {
           text: '原生介绍',
-          link: 'index',
+          link: 'index'
         },
         {
           text: 'css 样式',
-          link: 'css',
+          link: 'css'
         },
         {
           text: 'ES6',
-          link: 'es6',
+          link: 'es6'
         },
         {
           text: 'json',
-          link: 'json',
+          link: 'json'
         },
         {
           text: '日期原生',
-          link: 'date',
+          link: 'date'
         },
         {
           text: '语法高亮',
-          link: 'prismjs',
-        },
-      ],
+          link: 'prismjs'
+        }
+      ]
     },
     {
       text: '腾讯',
@@ -444,30 +444,30 @@ let sidebar = {
       children: [
         {
           text: '微信开发',
-          link: 'index',
+          link: 'index'
         },
         {
           text: 'taro',
-          link: 'taro',
-        },
-      ],
-    },
+          link: 'taro'
+        }
+      ]
+    }
   ],
   // 必须放最后
   '/': [
     {
       text: '开始',
-      link: 'index',
+      link: 'index'
     },
     {
       text: '关于',
-      link: 'about',
+      link: 'about'
     },
     {
       text: 'vue3.x 新手上路',
-      link: 'guide/vue/start',
-    },
-  ],
+      link: 'guide/vue/start'
+    }
+  ]
 };
 
 const path = require('path');

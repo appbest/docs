@@ -9,10 +9,6 @@ module.exports = {
   title: 'Quick 文档 ' + version,
   description: 'quick net core 项目开发库',
   base: root.base,
-  alias: {
-    '@': root.path,
-    vue: 'vue/dist/vue.esm-bundler.js',
-  },
   themeConfig: {
     docsDir: 'docs',
     logo: 'img/logo.png',
@@ -29,7 +25,7 @@ module.exports = {
     // 顶部导航
     nav,
     // 侧边栏
-    sidebar,
+    sidebar
   },
   markdown: {
     lineNumbers: true,
@@ -38,6 +34,6 @@ module.exports = {
     // options for markdown-it-toc
     // toc: { includeLevel: [1, 2] },
 
-    config: usePlus,
-  },
+    config: usePlus
+  }
 };

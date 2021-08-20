@@ -21,31 +21,36 @@
 //import 'quick-plugin-md/dist/styles/index.css'
 import { onMounted, ref } from 'vue'
 import { html } from 'quick.lib'
-import { useRouter, useSiteData } from 'vitepress'
+import { useRouter, useData } from 'vitepress'
 //import Theme from '/@theme/index';
 //import theme from 'vitepress/dist/client/theme-default/index.js';
 import DefaultTheme from 'vitepress/theme';
 const Layout = DefaultTheme.Layout
+
+//const { theme } = useData()
 //import Layout from 'vitepress/dist/client/theme-default/Layout.vue';
 
 /**
  * 搜索根目下的全局数据
  */
-import keywords from "@/keywords.json";
+import keywords from "../../../keywords.json";
 
 export default {
   components: { Layout },
   setup () {
 
-    const siteData = useSiteData()
+    // const { siteData } = useSiteData()
+    const { site } = useData()
+
     /** 路由 */
     const router = useRouter();
     /** 搜索事件触发 */
     const SearchEvent = (data) => {
       // 发布根目录
-      let _url = siteData.value.base + data.url.substr(1);
+      let _url = site.value.base + data.url.substr(1);
+      // let _url = data.url.substr(1);
       // let _url = data.url;
-      // console.log('SearchEvent：' + siteData.value.base, _url);
+      console.log('SearchEvent：', _url);
       router.go(_url);
     };
 

@@ -1,11 +1,12 @@
 # 前端文档
 
-> 基于 vitepress 搭建在线文档模板,支持 markdown 标题搜索,vue3 组件与 js 代码运行
+> 基于`vitepress` 搭建在线文档模板,支持 markdown 标题搜索,`vue3` 组件与 `js` 代码运行
 
 可快速搭建 vue 3.x 项目技术文档。
 
-- [github pages 在线文档](https://appbest.github.io/docs/)
+- [vitepress 官方](https://vitepress.vuejs.org/)
 - [gitee 在线文档](https://qve.gitee.io/docs/)
+- [github pages 在线文档](https://appbest.github.io/docs/)
 - [markdown 代码运行与搜索组件](https://www.npmjs.com/package/quick.run)
 
 ## 快速开始
