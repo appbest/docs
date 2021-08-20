@@ -1,0 +1,1 @@
+import{o as e,c as r,a}from"./app.a612cc0f.js";const h='{"title":"H5 微信原生开发","description":"","frontmatter":{},"headers":[{"level":2,"title":"Scheme","slug":"scheme"}],"relativePath":"guide/h5/wx.md","lastUpdated":1623039337627}',t={},i=[a('',4)];t.render=function(a,h,t,l,m,o){return e(),r("div",null,i)};export{h as __pageData,t as default};

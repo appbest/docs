@@ -1,0 +1,1 @@
+import{o as e,c as r,a}from"./app.a612cc0f.js";const t='{"title":"微信开发","description":"","frontmatter":{},"headers":[{"level":2,"title":"开发环境","slug":"开发环境"}],"relativePath":"guide/tx/index.md","lastUpdated":1622976166200}',i={},l=[a('',3)];i.render=function(a,t,i,o,d,n){return e(),r("div",null,l)};export{t as __pageData,i as default};

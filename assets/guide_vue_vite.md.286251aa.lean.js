@@ -1,0 +1,1 @@
+import{o as n,c as s,a}from"./app.a612cc0f.js";const e='{"title":"vite","description":"","frontmatter":{},"headers":[{"level":2,"title":"vite.config 配置","slug":"vite-config-配置"}],"relativePath":"guide/vue/vite.md","lastUpdated":1624518697268}',p={},t=[a('',7)];p.render=function(a,e,p,l,o,c){return n(),s("div",null,t)};export{e as __pageData,p as default};

@@ -1,0 +1,1 @@
+import{o as l,c as e,a as r}from"./app.a612cc0f.js";const u='{"title":"rollup 打包","description":"","frontmatter":{},"headers":[{"level":2,"title":"rollup vue 2.x","slug":"rollup-vue-2-x"}],"relativePath":"guide/rollup.md","lastUpdated":1624518391805}',p={},o=[r('',5)];p.render=function(r,u,p,a,i,t){return l(),e("div",null,o)};export{u as __pageData,p as default};

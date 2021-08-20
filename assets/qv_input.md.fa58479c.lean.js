@@ -1,0 +1,1 @@
+import{o as n,c as s,a}from"./app.a612cc0f.js";const p='{"title":"Input 输入框","description":"","frontmatter":{},"headers":[{"level":2,"title":"兼容性处理","slug":"兼容性处理"}],"relativePath":"qv/input.md","lastUpdated":1622976166490}',t={},e=[a('',6)];t.render=function(a,p,t,l,o,c){return n(),s("div",null,e)};export{p as __pageData,t as default};

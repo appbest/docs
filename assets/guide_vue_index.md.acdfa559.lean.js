@@ -1,0 +1,1 @@
+import{o as e,c as r,a as t}from"./app.a612cc0f.js";const a='{"title":"vue 3","description":"","frontmatter":{},"headers":[{"level":2,"title":"Vue Electron 脚手架","slug":"vue-electron-脚手架"}],"relativePath":"guide/vue/index.md","lastUpdated":1624522947058}',l={},n=[t('',5)];l.render=function(t,a,l,u,o,i){return e(),r("div",null,n)};export{a as __pageData,l as default};

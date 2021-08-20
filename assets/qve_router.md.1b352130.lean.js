@@ -1,0 +1,1 @@
+import{o as e,c as r,a as t}from"./app.a612cc0f.js";const a='{"title":"Router 路由","description":"","frontmatter":{},"headers":[{"level":2,"title":"Router 路由配置","slug":"router-路由配置"}],"relativePath":"qve/router.md","lastUpdated":1624518886588}',u={},o=[t('',3)];u.render=function(t,a,u,d,i,l){return e(),r("div",null,o)};export{a as __pageData,u as default};
