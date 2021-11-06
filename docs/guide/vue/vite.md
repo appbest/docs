@@ -32,3 +32,32 @@ module.exports = {
   productionSourceMap: false,
 };
 ```
+
+## vue2.x
+
+### 兼容 IE
+
+IE 不支持 Promise 解决办法（可搜索 polyfill）
+引入 `<script type="text/javascript" src = "https://cdn.polyfill.io/v2/polyfill.min.js?features=es6"></script>`
+
+### esbuild
+
+- 编译报错
+
+  当针对旧版浏览器时，无法使用 esbuild 作为缩小器，因为 esbuild 缩小不是旧版安全的
+  `Can't use esbuild as the minifier when targeting legacy browsers because esbuild minification is not legacy safe`
+  需要关闭压缩，以兼容 IE
+
+```js
+module.exports = {
+  // 本地路径
+
+  build: {
+    // 兼容IE 测试
+    target: 'es2015'
+    // 关闭压缩
+    minify: false,
+    // minify: 'esbuild',
+  }
+}
+```

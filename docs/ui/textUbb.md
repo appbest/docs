@@ -59,7 +59,7 @@ export default {
 
 | 参数名  | 说明                                        | 类型    |
 | ------- | ------------------------------------------- | ------- |
-| cmd     | format:格式化触发,error:错误触发,clear:清除 | Boolean |
+| cmd     | format:格式化触发,error:错误触发,clear:清除 | String |
 | named   | 组件命名                                    | String  |
 | data    | 转换之后的事件数据                          | String  |
 | format  | 是否格式化显示为 string                     | Boolean |

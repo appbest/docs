@@ -186,7 +186,7 @@ const testTpl = {
 | tip       | 内容提示                                                                            | Number  |          | ？       |
 | max       | 输入内容最大值                                                                      | Number  |          |          |
 | api       | 外键查询面板数据接口                                                                | Number  |          | c:panel  |
-| c         | [自定义显示控件名](./tpl.md)                                                        | String  |          |          |
+| c         | 自定义编辑控件命名如 code:代码编辑,panel:外键面板,file:上传控件                       | String  |         |          |
 | g         | 自定义内容编码格式，`encode`                                                        | String  |          |          |
 | w         | 列表宽度                                                                            | Number  |          |          |
 | f         | 自定义数据库字段名，`field`                                                         | String  | -        | -        |

@@ -192,3 +192,17 @@ export default {
 };
 </script>
 ```
+
+
+## Control props
+
+| 属性 | 说明                          | 类型                  | 参数 | 默认值 |
+| ---- | ----------------------------- | --------------------- | ------ | ------ |
+| named  | 组件命名 |  String |     | upload   |
+| type  | 上传文件类型,返回监听组件事件名cmd |  String  |  'base64', 'execl'|  base64 |
+| multiple  | 是否开启多文件上传 |  Boolean  |  |  false |
+| accept  | 指定上传文件类型 |  String  |type=base64,默认为`image/*`   |  null |
+| max  | 最大上传尺寸单位为KB,默认3M |  Number  |  |   3 * 1024 |
+| ratio  | 图片压缩质量等级  |  Number  |  |   0.6|
+| scale  | 图片压缩缩放尺寸比例 |  Number  |  |  0.7 |
+| mark  | 图片加水印 |  json  | {text:'加水印文字',style:'水印文字样式',font:'水印文字大小',x:'左边距',y:'顶边距'} |   null |

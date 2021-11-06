@@ -120,7 +120,8 @@ export default {
     });
 
     const btnLoad = (val, named) => {
-      named = named || 'base';
+      // 组件命名
+      named = named || 'loading';
       let resp;
       switch (val) {
         /** 进度开始 */

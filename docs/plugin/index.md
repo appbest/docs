@@ -6,6 +6,7 @@
 - [vitepress 官方文档](./vitepress.md)
 - [quick-plugin-md 插件](https://www.npmjs.com/package/quick-plugin-md)
 - [markdown-it](https://markdown-it.docschina.org/)
+- [mermaid 图表插件](https://mermaid-js.github.io/)
 
 ## vitepress 快速使用
 
@@ -32,13 +33,13 @@ yarn docs:build
 首次运行测试有可能会报路径错误，请多刷新几次，即可正常运行。
 :::
 
-## Components 组件
+## quick-plugin-md 组件
 
 - [x] `CodeRun` 代码执行组件
 - [x] `SearchBar` 搜索组件
 - [x] `Mermaid` 流程图组件
 - [x] `Picture` 图片组件
-- [ ] 支持 i18n
+- [ ] 支持 i18n 多国语言
 
 ## 目录结构
 
@@ -74,7 +75,7 @@ yarn docs:build
         |   |   |-- iconfont.woff2
 ```
 
-## 全局配置 config
+## vitepress config 配置 
 
 - [配置文档](https://vitepress.vuejs.org/guide/global-computed.html)
 
@@ -89,7 +90,8 @@ module.exports = {
     '@': root.path,
     vue: 'vue/dist/vue.esm-bundler.js',
   },
-  head: [],
+   // 头部引入第三方流程图脚本
+  // head: [['script', { type: 'module', src: root.base + '/js/mermaid.min.js' }]],
   locales: {},
   themeConfig: {
     docsDir: 'docs',
@@ -122,6 +124,23 @@ module.exports = {
     },
   },
 };
+```
+
+### vitepress js head引入
+
+需要在`config`中配置head
+> .vitepress>config.js
+
+```js
+// 如需发布到二级目录
+const _base='/net';
+
+module.exports = {
+  // 文件根目录与
+  base: _base,
+   // 头部引入public下第三方流程图脚本 root.base
+  head: [['script', { type: 'module', src:_base + '/js/mermaid.min.js' }]]
+}
 ```
 
 ## markdown Line Numbers 行号
@@ -258,6 +277,16 @@ return 1 + 1;
 | dll      | 传入的外部函数库名`json,htmll`     | String                        |        |
 
 ## 绘图组件 Mermaid
+
+使用绘图组件
+::: warning
+
+1. 需要复制`node_modules>quick-plugin-md>dist>js`文件夹到`docs`>`public`
+
+2. 需要在 `config.head` 中引入`/js/mermaid.min.js`
+
+:::
+
 
 - 示例 实体关系图 erDiagram
 

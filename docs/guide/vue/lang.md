@@ -2,7 +2,7 @@
 
 安装类库
 
-- [vue-i18n]()
+- [vue-i18n](https://kazupon.github.io/vue-i18n/zh/)
 
 ## 国际化语言 vue-i18n
 

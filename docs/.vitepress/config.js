@@ -9,6 +9,8 @@ module.exports = {
   title: 'Quick 文档 ' + version,
   description: 'quick net core 项目开发库',
   base: root.base,
+  // 头部引入public下第三方流程图脚本 root.base
+  head: [['script', { type: 'module', src: root.base + '/js/mermaid.min.js' }]],
   themeConfig: {
     docsDir: 'docs',
     logo: 'img/logo.png',

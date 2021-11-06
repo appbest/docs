@@ -236,6 +236,10 @@ let sidebar = {
       link: 'imgLazy'
     },
     {
+      text: 'Upload 文件上传',
+      link: 'upload'
+    },
+    {
       text: 'Table 表格',
       link: 'table'
     },

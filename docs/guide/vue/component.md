@@ -113,3 +113,72 @@ export default {
   },
 };
 ```
+
+
+## defineCustomElement web 组件
+
+- 通过 defineCustomElement 方法创建原生自定义组件。也可以通过这种方式发布组件出去给别人
+
+```js
+// main.js
+import { defineCustomElement } from "vue"
+
+const MyVueElement = defineCustomElement({
+    // 通用 vue 组件选项
+    props:["foo"],
+    render(){
+        return h("div", "my-vue-element:" + this.foo)
+    },
+    // 仅适用于 defineCustomElement, css将被注入到 shadow root
+    style: [`div { border: 1px solid red }`]
+})
+
+customElements.define("my-vue-element", MyVueElement)
+
+```
+
+- 然后在 vite.config.js 里配置白名单
+
+```js
+
+export default defineConfig({
+    plugins: [
+        vue({
+            template: {
+                compilerOptions: {
+                    // vue 将跳过 my-vue-element 解析
+                    isCustomElement: (tag) => tag === "my-vue-element"
+                }
+            }
+        })
+    ]
+})
+
+```
+- 然后使用
+
+```js
+<my-vue-element foo="foo" />
+```
+
+
+##  v-memo 缓存模板部分
+
+`vue 3.2`
+
+它可以缓存模板中的一部分，从而提升速度。比如说大量 v-for 的列表，只创建一次，就不会再更新了，直接用缓存，就是用内存换时间
+下面这样组件重新渲染时，如果 valueA 和 valueB 没有变化，div 将跳过此组件和其子组件的所有更新
+
+```html
+<div v-memo="[valueA, valueB]">
+    ...
+</div>
+```
+
+还有像下面这样，部分缓存。需要注意的是在 `v-memo` 里面不能用 `v-for`
+
+```html
+<div v-for="item in list" :key="item.id" v-memo="[item.id === selected]">
+    ...
+</div>
+```
