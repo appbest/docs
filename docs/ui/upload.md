@@ -14,8 +14,8 @@
 
 <template>
   <div>
-    <Upload v-model="the.file"  @onEvent="onUploadEvent">上传图片</Upload>
-    <Upload :mark="the.mark" @onEvent="onUploadEvent">上传图片</Upload>
+  <p><Upload v-model="the.file"  @onEvent="onUploadEvent">上传图片</Upload></p>
+   <p><Upload :mark="the.mark" @onEvent="onUploadEvent">上传图片,水印模式imgMin 函数会导致图片变大Bug，慎用</Upload></p>
     <Upload :multiple="true"
                 named="file"
                 type="execl"
