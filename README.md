@@ -49,9 +49,11 @@ yarn docs:build
 
 - [更新说明](./CHANGELOG.md)
 
-### 0.2.0
-
-- `qve` 升级到 0.2.2
+### 0.2.2
+`2021/11/6`
+   - `quick-plugin-md` : 0.1.5
+   - `vitepress` : 0.20.1
+   - `qve`: 0.2.5
 
 ## 文档组件
 
